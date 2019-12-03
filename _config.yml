@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ashwathama
+title: Nevarsin's blog
 description: > # this means to ignore newlines until "baseurl:"
- Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
+ This is where I keep all the Linux, Automation and DevOps stuff my wife considers boring :)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nevarsin.github.io/"
 permalink: :title/
