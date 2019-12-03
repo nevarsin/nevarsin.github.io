@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "How I Coded a Movie Website"
-description: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-date:   2016-09-11 10:50:00 +0530
-categories: code
-author: ashwathama
+title:  "Your old Raspberry PI as a home router"
+description: Every geek has at least one unused Raspberry Pi laying around, this is a tutorial to set it up as your own home router. 
+date:   2019-12-03 13:30:00 +01
+categories: linux
+author: nevarsin
 ---
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+Reasons why you can (and you should) use an old raspberry to get a full managed home router (antispam included).
 
 
-![]({{site.baseurl}}/images/lost-9.jpg)
+![]({{site.baseurl}}/images/raspberry1.jpg)
 
 <a href='http://www.freepik.com/free-vector/user-experience-with-web-design-elements_846615.htm'>Designed by Freepik</a>
 

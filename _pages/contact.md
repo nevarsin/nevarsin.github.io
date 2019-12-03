@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Contact me
 permalink: /contact/
 show-in-menu: yes
 active: active
