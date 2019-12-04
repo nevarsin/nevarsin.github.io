@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Your old Raspberry PI as a home router"
-description: Every geek has at least one unused Raspberry Pi laying around, this is a tutorial to set it up as your own home router. 
+title:  "Your old Raspberry PI as a 4G/LTE home router"
+description: Every geek has at least one unused Raspberry Pi laying around, this is a tutorial to set it up as your own 4G/LTE home router. 
 date:   2019-12-03 13:30:00 +01
 categories: linux
 author: nevarsin
@@ -10,19 +10,39 @@ Reasons why you can (and you should) use an old raspberry to get a full managed 
 
 
 ![]({{site.baseurl}}/images/raspberry1.jpg)
+(the mighty Raspberry Pi 1 Model B)
 
-<a href='http://www.freepik.com/free-vector/user-experience-with-web-design-elements_846615.htm'>Designed by Freepik</a>
+My family's bandwidth needs are limited to web-browsing and some occasional video stream but, unfortunately, my home is located where fiber internet connection is not yet in sight. 
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+Luckily Italy is one of the countries with the cheapest mobile connections (I currently get 50GB/month for about 10€) so 4G is a viable solution.
 
-Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+The thing is: 4G routers are more expensive (starting from 80€) and less available than their xDSL counterparts so I set to find an alternative. 
 
-Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-
-Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-
-Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+What I needed was:
+- a decent WiFi AP
+- a 4G modem of sort
+- an actual router
 
 
+For the first one any leftover cheap wifi xDSL modem/router (you or a relative may have one left by some TLC operator) will do.
+
+I missed the second one so I had to make <a href="https://www.amazon.it/gp/product/B01M3POL6X/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1"> a small purchase </a>. I chose this because of the price and because it was documented as linux friendly.
+
+Lastly: I needed the intelligent packet wrangler. That's where the Raspberry comes in handy.
+The absolute advantage of setting up your "raspi-router" is, as usually with Linux and FOSS, the freedom to set your custom rules incl. dns filtering.
+
+## Connecting
+----------------------
+
+![]({{site.baseurl}}/images/diagram.png)
+
+- An ethernet cable will connect one of the ports of your router/ap to the Raspberry only ethernet port
+- Of course the 4G USB modem needs to be plugged in one of the USB ports. Given the fair amount of current it will draw I would suggest, for this purpose, to use a <a href="https://www.amazon.it/Anker-Trasferimento-porte-Sottile-Adattatore/dp/B0192W3HX8/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ON67LCLPVW14&keywords=usb+hub+alimentato&qid=1575496906&smid=A2PGPJL0BBLHLX&sprefix=usb+hub%2Caps%2C214&sr=8-4"> powered USB hub</a>.
+
+## Configuring
+
+### Router/AP
+1. Configure the wifi access (SSID, WPA2/3 Key, etc). Refer to your device documentation in order to do so.
+2. Set a static IP address on the device (I used 192.168.100.10/255.255.255.0)
+
+### Raspberry

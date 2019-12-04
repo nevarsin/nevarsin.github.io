@@ -10,9 +10,9 @@ title: Nevarsin's blog
 description: > # this means to ignore newlines until "baseurl:"
  This is where I keep all the Linux, Automation and DevOps stuff my wife considers boring :)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nevarsin.github.io/"
+url: "https://nevarsin.blog/"
 permalink: :title/
-full-url: "https://nevarsin.github.io/" # the base hostname & protocol for your site
+full-url: "https://nevarsin.blog/" # the base hostname & protocol for your site
 
 
 # CSS
@@ -31,7 +31,7 @@ analytics:
 simpleform-token: b6d4be9b039b666b3311e1ddcbfb577c
 
 # Redirect users after submitting the form
-redirect-to: https://nevarsin.github.io
+redirect-to: https://nevarsin.blog
 
 # Site version
 version: 0.9
@@ -51,8 +51,8 @@ author:
   name: Stefano Chittaro (Nevarsin)
   image: profile.png # The author image will be shown on the header. Place this image in /images/ folder.
   about: I love FOSS, automation and everything around Linux
-  twitter: webjeda  # https://twitter.com/ is automatically added
-  facebook: webjeda # https://facebook.com/ is automatically added
+  #twitter: webjeda  # https://twitter.com/ is automatically added
+  #facebook: webjeda # https://facebook.com/ is automatically added
   email: stefano@nevarsin.blog # mailto: is automatically added
   
 plugins: 
