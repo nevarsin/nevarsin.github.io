@@ -39,10 +39,123 @@ The absolute advantage of setting up your "raspi-router" is, as usually with Lin
 - An ethernet cable will connect one of the ports of your router/ap to the Raspberry only ethernet port
 - Of course the 4G USB modem needs to be plugged in one of the USB ports. Given the fair amount of current it will draw I would suggest, for this purpose, to use a <a href="https://www.amazon.it/Anker-Trasferimento-porte-Sottile-Adattatore/dp/B0192W3HX8/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ON67LCLPVW14&keywords=usb+hub+alimentato&qid=1575496906&smid=A2PGPJL0BBLHLX&sprefix=usb+hub%2Caps%2C214&sr=8-4"> powered USB hub</a>.
 
-## Configuring
+## Router/AP
 
-### Router/AP
 1. Configure the wifi access (SSID, WPA2/3 Key, etc). Refer to your device documentation in order to do so.
 2. Set a static IP address on the device (I used 192.168.100.10/255.255.255.0)
+3. Set a proper admin password (!!)
 
-### Raspberry
+## Raspberry Pi
+
+I assume, of course, that you already have a proper distribution onboard. Being a lifelong Debian fan I cannot recommend <a href=https://www.raspbian.org/"> Raspbian</a> enough. You can follow its <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md"> complete install guide</a>.
+
+Also <a href="https://www.raspberrypistarterkits.com/how-to/enable-ssh-raspberry-pi/">enable SSH access</a>
+
+### Network interface - LAN (Eth)
+The eth interface is, by default, set to look for a DHCP server. We need to set a static IP address in the same subnet of the Router/AP. Static network configuration is located in a file called ``/etc/network/interface``
+
+so open it up with your favourite text editor and add the following:
+
+{% highlight bash %}
+
+allow-hotplug eth0
+iface eth0 inet static
+      address 192.168.100.1
+      netmask 255.255.255.0      
+
+{% endhighlight %}
+
+Save and apply your new conf with 
+
+> service networking restart 
+
+### Network interface - WAN (4G/LTE USB)
+
+Most of the USB modems you find on the market nowadays, are (**finally**) eth network interfaces with an embbedded gateway (not just USB modems bundled with the driver hell that usually comes with it).
+This means that, once you have a working SIM (disable the PIN coe first), plugging in the USB modem will most likely work out of the box.
+
+The device is a USB multimode one so if you plug it in a Windows computer it will first appear as a CDROM device, install the drivers and then switch in "modem" mode.
+
+With Linux you don't need to install anything beforehand and usb_modeswitch should immediately set the modem to... well... modem mode.
+
+In my case, however, I got a kernel panic when usb_modeswitch kicked in. A little workaround was needed:
+
+### Firewall configuration
+We need to install some packages 
+
+> sudo apt update
+>
+> sudo apt install iptables-persistent
+
+A basic iptables/netfilter setup has to be created in order to instruct our Raspi to masquerade all requests coming from LAN to WAN. This means that all connections coming from and trying to access anything not-local will be forwarded to the WAN interface. This is what a router does :)
+
+A conf example is the following, edit:
+
+> /etc/iptables/cose
+
+and insert: 
+
+{% highlight bash %}
+
+allow-hotplug eth0
+iface eth0 inet static
+      address 192.168.100.1
+      netmask 255.255.255.0      
+
+{% endhighlight %}
+
+the iptables-persistent package will take care of restoring said rules during boot. If you want to apply them immediately, punch in: 
+
+> iptables-restore < /etc/iptables/cose
+
+Lastly, we need to enable ip4_forwarding globally. This is done via:
+
+> echo 1 > /proc/sys/net/ipv4/ip_forward
+
+This needs to be set at every boot so put that line in some place that will be run on start. An old school example is ``/etc/rc.local`` or you can create a small systemd unit just for this purpose. 
+
+> sudo vi /etc/systemd/system/enable.forwarding.service
+
+insert this:
+
+{% highlight bash %}
+
+[Unit]
+After=sshd.service
+
+[Service]
+ExecStart=/bin/echo 1 > /proc/sys/net/ipv4/ip_forward
+
+[Install]
+WantedBy=default.target
+
+{% endhighlight %}
+
+save and then
+
+> sudo systemctl daemon-reload
+>
+> sudo systemctl enable enable.forwarding
+>
+> sudo systemctl start enable.forwarding
+
+(Systemd unit files are nice and easy compared the old style init scripts, aren't they?)
+
+### DHCP server
+
+No router setup is complete without being in charge of LAN address assignement. Let's install a DHCP server.
+
+> sudo apt install isc-dhcp-server
+
+and put in a sample conf:
+
+{% highlight bash %}
+
+DHCP SERVER CONF HERE
+
+{% endhighlight %}
+
+You should already be able to browse the internet from any device connected to the AP Wifi
+
+
+
