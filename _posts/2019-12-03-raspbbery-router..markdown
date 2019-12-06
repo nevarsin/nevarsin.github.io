@@ -6,7 +6,7 @@ date:   2019-12-03 13:30:00 +01
 categories: linux
 author: nevarsin
 ---
-How to (and why you should) use an old raspberry to get a full managed 4G home router (antispam included).
+How to (and why you should) use an old raspberry to get a fully managed 4G home router (antispam included).
 
 ![]({{site.baseurl}}/images/raspberry1.jpg)
 (the mighty Raspberry Pi 1 Model B)
@@ -46,7 +46,7 @@ The absolute advantage of setting up your "raspi-router" is, as usually with Lin
 
 # Raspberry Pi
 
-I assume, of course, that you already have a proper distribution onboard. Being a lifelong Debian fan I cannot recommend <a href=https://www.raspbian.org/"> Raspbian</a> enough. You can follow its <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md"> complete install guide</a>.
+I assume, of course, that you already have a proper distribution onboard. Being a lifelong Debian fan I cannot recommend <a href="https://www.raspbian.org/"> Raspbian</a> enough. You can follow its <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md"> complete install guide</a>.
 
 Also <a href="https://www.raspberrypistarterkits.com/how-to/enable-ssh-raspberry-pi/">enable SSH access</a>
 
