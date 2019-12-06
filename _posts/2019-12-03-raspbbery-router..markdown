@@ -59,7 +59,7 @@ so open it up with your favourite text editor and add the following:
 
 interface eth0
 static ip_address=192.168.100.1/24
-static domain_name_servers=8.8.8.8 8.8.4.4
+static domain_name_servers=208.67.222.222 208.67.220.220
 
 {% endhighlight %}
 
