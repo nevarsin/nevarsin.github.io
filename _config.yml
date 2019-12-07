@@ -28,13 +28,13 @@ analytics: UA-51337625-2
 # Form Settings
 #
 # Contact form can be enabled by getting an API key from https://getsimpleform.com/
-simpleform-token: 
+simpleform-token: e12d8e21c35b94eddd23291fd548290e
 
 # Redirect users after submitting the form
 redirect-to: https://nevarsin.blog
 
 # Site version
-version: 0.9
+version: 0.1
 
 
 # Post date background - This will change the background of the post date and tag ribbon according to the theme. If set to no default green background will be used. If yes then the theme color scheme is used.

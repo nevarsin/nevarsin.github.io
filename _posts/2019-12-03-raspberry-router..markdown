@@ -19,7 +19,7 @@ Luckily for me Italy is one of the countries with the cheapest mobile connection
 Additionally: most of the software on board of routers is limited when it comes to run your stuff and, on the other hand, portable 4G routers have really crappy WiFi. 
 
 What I needed was:
-- a decent WiFi AP
+- a decent WiFi AP (I wanted an home-wide wifi)
 - a 4G modem of sort
 - an actual router
 
