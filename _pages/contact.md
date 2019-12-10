@@ -13,7 +13,7 @@ I am open to suggestions, job contacts and, of course, error notifications :)
         <ul class="contact-ul">
             <li class="contact-li">
                 <label class="contact-label" for="name">Name:</label>
-                <input type="text" placeholder="Your name" id="name" class="contact-input" name="name" tabindex="1"/>
+                <input type="text" placeholder="Your name" id="grename" class="contact-input" name="name" tabindex="1"/>
             </li>
             <li class="contact-li">
                 <label class="contact-label" for="email">Email:</label>
@@ -48,7 +48,7 @@ form {
 
 .contact-input:focus {
     outline:none;
-    border-bottom: 1px solid #514A9D;
+    border-bottom: 1px solid #232331;
 
 }
 
@@ -64,7 +64,7 @@ ul.contact-ul {
 
 #submit {
     border:none;
-    background-color: #514A9D;
+    background-color: #232331;
     padding: 5px 15px;
     color: #eee;
     opacity: 0.8;
