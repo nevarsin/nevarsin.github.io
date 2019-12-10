@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "An old Raspberry PI as a 4G/LTE home router"
-description: Every geek has at least one unused Raspberry Pi laying around, this is a tutorial to set it up as your own 4G/LTE home router. 
+title:  "An old Raspberry PI as a 4G/LTE router"
+description: Every geek has one unused Raspberry Pi laying around, this is a tutorial to set it up as your own 4G/LTE router. 
 date:   2019-12-03 13:30:00 +01
 categories: linux
 author: nevarsin
