@@ -21,9 +21,9 @@
 
 .post-meta {
     display: inline-block;
-    background: #26A65B; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #26A65B , #2ECC71); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #26A65B , #2ECC71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: #232331; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #232331 , #232331); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #232331 , #232331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
     padding: 10px 25px;
     color: $background-color;
     text-align: center;
@@ -114,9 +114,9 @@ p.post-excerpt {
   -webkit-transform: rotate(45deg);
   width: 100px;
   display: block;
-  background: #79A70A;
-  background: linear-gradient(#2ECC71 0%, #26A65B 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  background: #232331;
+  background: linear-gradient(#232331 0%, #232331 100%);
+  /*box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);*/
   position: absolute;
   top: 19px; right: -21px;
 }
@@ -124,17 +124,17 @@ p.post-excerpt {
   content: "";
   position: absolute; left: 0px; top: 100%;
   z-index: -1;
-  border-left: 3px solid #26A65B;
+  border-left: 3px solid #232331;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #26A65B;
+  border-top: 3px solid #232331;
 }
 .ribbon span::after {
   content: "";
   position: absolute; right: 0px; top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
-  border-right: 3px solid #26A65B;
+  border-right: 3px solid #232331;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #26A65B;
+  border-top: 3px solid #232331;
 }

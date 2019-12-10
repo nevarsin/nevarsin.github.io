@@ -6,5 +6,8 @@ date:   2019-12-09 13:30:00 +01
 categories: linux
 author: nevarsin
 ---
-![]({{site.baseurl}}/images/usbmodeswitch_header.png)
+|![]({{site.baseurl}}/images/usbmodeswitch_header.png)|
+|:--:| 
+| *the default usbmodeswitch conf file* |
+
 USB Modeswitch is a

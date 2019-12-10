@@ -8,8 +8,10 @@ author: nevarsin
 ---
 How to (and why you should) use an old raspberry to get a fully managed 4G home router (antispam included).
 
-![]({{site.baseurl}}/images/raspberry1.jpg)
-(the mighty Raspberry Pi 1 Model B)
+|![]({{site.baseurl}}/images/raspberry1.jpg) |
+|:--:| 
+| *the mighty Raspberry Pi 1 Model B* |
+
 
 My family's bandwidth needs are limited to web-browsing and some occasional video stream but, unfortunately, my home is located where fiber internet connection is not yet in sight. 
 
@@ -32,7 +34,9 @@ The absolute advantage of setting up your "raspi-router" is, as usually with Lin
 
 # Connecting
 
-![]({{site.baseurl}}/images/diagram.png)
+|![]({{site.baseurl}}/images/diagram.png)|
+|:--:| 
+| *I just have fun using draw.io* |
 
 - An ethernet cable will connect one of the ports of your router/ap to the Raspberry only ethernet port
 - Of course the 4G USB modem needs to be plugged in one of the USB ports. Given the fair amount of current it will draw I would suggest, for this purpose, to use a <a href="https://www.amazon.it/Anker-Trasferimento-porte-Sottile-Adattatore/dp/B0192W3HX8/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ON67LCLPVW14&keywords=usb+hub+alimentato&qid=1575496906&smid=A2PGPJL0BBLHLX&sprefix=usb+hub%2Caps%2C214&sr=8-4"> powered USB hub</a>.
@@ -70,7 +74,9 @@ Save and apply your new conf with
 
 ## Network interface - WAN (4G/LTE USB)
 
-![]({{site.baseurl}}/images/usb_4g.png)
+|![]({{site.baseurl}}/images/usb_4g.png)|
+|:--:| 
+| *Alcatel IK40V* |
 
 Most of the USB modems you find on the market nowadays, are (**finally**) eth network interfaces with an embbedded gateway (not just USB modems bundled with the driver hell that usually comes with it).
 This means that, once you have a working SIM (disable the PIN coe first), plugging in the USB modem will most likely work out of the box.
@@ -172,7 +178,9 @@ You probably noticed that I put the LAN address of the Raspi as the first DNS se
 
 # PiHole
 
-<a href="https://pi-hole.net/">![]({{site.baseurl}}/images/pihole_logo.jpg)</a>
+|<a href="https://pi-hole.net/">![]({{site.baseurl}}/images/pihole_logo.jpg)</a>|
+|:--:| 
+| *PiHole official logo* |
 
 <a href="https://pi-hole.net/">PiHole</a> is a great FOSS project that does simply one thing: all DNS requests directed to Ads domains are resolved with a bogus address. This is much more effective that browser side ad blocker extensions: the ads are not hidden/suppressed, they're simply never loaded. This will also work automatically on all your home devices.
 
@@ -184,7 +192,9 @@ Install it is pretty easy. There's a nice a script to run:
 
 An installation wizard will run and ask you for some basic parameters
 
-![]({{site.baseurl}}/images/pihole_inst1.jpg)
+|![]({{site.baseurl}}/images/pihole_inst1.jpg)|
+|:--:| 
+| *first step of PiHole installation wiz* |
 
 Some tips:
 - when asked about which network interface select "eth0"
