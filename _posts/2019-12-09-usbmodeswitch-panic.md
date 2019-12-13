@@ -5,6 +5,7 @@ description: USB_modeswitch, on Raspbian, is a bless. Sometimes, however, things
 date:   2019-12-09 13:30:00 +01
 categories: linux
 author: nevarsin
+published: false  
 ---
 |![]({{site.baseurl}}/images/usbmodeswitch_header.png)|
 |:--:| 
