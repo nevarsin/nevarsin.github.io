@@ -78,7 +78,7 @@ Save and apply your new conf with
 |:--:| 
 | *Alcatel IK40V* |
 
-Most of the USB modems you find on the market nowadays, are (**finally**) eth network interfaces with an embbedded gateway (not just USB modems bundled with the driver hell that usually comes with it).
+Most of the USB modems you find on the market nowadays, are (**finally**) eth network interfaces with an embedded gateway (not just USB modems bundled with the driver hell that usually comes with it).
 This means that, once you have a working SIM (disable the PIN coe first), plugging in the USB modem will most likely work out of the box.
 
 The device is a USB multimode one so if you plug it in a Windows computer it will first appear as a CDROM device, install the drivers and then switch in "modem" mode.
@@ -145,7 +145,7 @@ save and then
 
 ### DHCP server
 
-No router setup is complete without being in charge of LAN address assignement. Let's install a DHCP server.
+No router setup is complete without being in charge of LAN address assignment. Let's install a DHCP server.
 
 > sudo apt install isc-dhcp-server
 
@@ -202,7 +202,7 @@ Some tips:
 - enable all blacklists
 - consider whether to enable the dashboard: while it is cool, it will end up doing a lot of writings to your Raspi's SD and you will just look at it once or twice.
 
-Ok now you also have a fancy, adfree, DNS server.
+Ok now you also have a fancy, ad-free, DNS server.
 
 # Conclusion
 

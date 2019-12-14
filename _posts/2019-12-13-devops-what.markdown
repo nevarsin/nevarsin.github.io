@@ -5,7 +5,7 @@ description: "And yet you, your dev colleagues and your business need it now mor
 date:   2019-12-13 13:30:00 +01
 categories: devops
 author: nevarsin
-published: true
+published: false
 ---
 |![]({{site.baseurl}}/images/Devops-toolchain.svg)|
 |:--:| 
@@ -29,7 +29,7 @@ As you can find in the specific <a target="_blank" href="https://en.wikipedia.or
 
 ## The traditional approach
 
-Old schools development metodologies usually follow this steps:
+Old schools development methodologies usually follow this steps:
 1. A developer copies (or pulls) code to hook of a specific feature on his workstation
 2. He adds his own code and builds this portion only
 3. Other devs, in the same or a different team, do the same
@@ -60,7 +60,7 @@ Above all technical issues: this approach is also doomed to create friction betw
 
 # Development+Operations
 
-DevOps is a metodology that, both from a technical and methodological point of view, aims at a quicker, simpler and effective product development and release cycle (have a look again at the first pic of this article). 
+DevOps is a set of best practices that, both from a technical and methodological point of view, aims at a quicker, simpler and effective product development and release cycle (have a look again at the first pic of this article). 
 
 Some of the benefits are:
 - Smaller release batches
@@ -77,6 +77,45 @@ I will now describe some of the tools I employed in the will enable companies. I
 
 This has been the biggest revolution in the field: containerization took away all the complexity of creating a proper run environment for an application by segmenting filesystem/network thus providing an evoluted chroot jail for a specific process or service.
 
-Each container becomes an indipendent piece of the whole project and its content will be deployed in the same way on a single workstation dev environment, on a staging local server or in a production cloud infrastructure.
+Each container becomes an independent piece of the whole project and its content can be deployed in the same exact way on a single workstation dev environment, on a staging local server or in a production cloud infrastructure.
 
-LOREM IPSUM
+Some refs: 
+- <a target="_blank" href="https://docs.docker.com/get-started/">Docker "Get Started" documentation</a>
+- <a target="_blank" href="https://labs.play-with-docker.com/">Play with Docker</a>
+
+You can also have a look at two docker images I created:
+- <a target="_blank" href="https://www.cmdbuild.org"> CMDBuild Asset Manager </a>: <a target="_blank" href="https://hub.docker.com/repository/docker/trepz/cmdbuild" >Docker Image</a> | <a target="_blank" href="https://github.com/nevarsin/docker-cmdbuild">Github repo</a>
+- <a target="_blank" href="https://www.resiprocate.org/ReTurn_Overview">reSIProcate STUN/TURN Server: <a target="_blank" href="https://hub.docker.com/repository/docker/trepz/stunturn">Docker Image</a> |<a target="_blank" href="https://github.com/nevarsin/docker-resiprocate"> Github repo</a>
+
+### CI/CD tools
+
+Continuous Integration and Continuous Deployment are often found together and featured at the same time in a few open source projects.
+Some refers to them as "glorified script". It's basically a whole lot of pre made automation that does the following:
+1. gets triggered by commits of a source control management (Git, Mercurial)
+2. compiles the source
+3. executes automated tests
+4. if both build and tests are successful, deploys the application in staging/production
+5. reports on all of the above
+
+Some of the prominent ones are <a target="_blank" href="https://travis-ci.org/" >Travis CI</a> (general oriented and with a native GitHub integration) and <a target="_blank" href="https://jenkins.io/" >Jenkins</a> (more Java oriented but extremely flexible nonetheless).
+<a target="_blank" href="https://www.gitlab.com" >Gitlab </a>also includes CI/CD feature even on its Community Edition.  
+
+### Orchestration
+
+Once code (in form of containers) is in production, you'll need to rationalize how those containers will behave, be located, scale, etc. 
+This is the duty of an orchestration application. It provides CLI and API to pick containers from a repository (called registry) and deploy them in a production environment, most of the times a cloud one. 
+
+The complexity of orchestration can be overwhelming. A specialized role emerged subsequently in order to handle "only" the Ops part of orchestration: <a target="_blank" href="https://landing.google.com/sre/books/" >the Site Reliability Engineer</a>.
+
+There are multiple solutions to orchestrate with but I will be misdirecting you if I pointed you somewhere else than to <a target="_blank" href="https://kubernetes.io/"> Kubernetes</a>. You will find a lot of "distribution" of Kubernetes (or K8S for short) provided by every major cloud player and also some learning/dev single-node versions like MiniKube or MicroK8s.
+
+## Human interaction
+
+### Communication
+
+### Feedback
+
+
+# Final tips
+
+I strongly recommend one book above all: The Phoenix Project. It's a novel (yet, seriously) involving 
