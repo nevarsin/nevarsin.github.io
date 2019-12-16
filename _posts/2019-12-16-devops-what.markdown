@@ -2,7 +2,7 @@
 layout: post
 title:  "DevOps is a fancy word"
 description: "And yet you, your dev colleagues and your business need it now more than ever"
-date:   2019-12-13 13:30:00 +01
+date:   2019-12-16 12:30:00 +01
 categories: devops
 author: nevarsin
 published: true
@@ -10,6 +10,8 @@ published: true
 |![]({{site.baseurl}}/images/Devops-toolchain.svg)|
 |:--:| 
 | "*And thaaat's the way the news goes!*" |
+
+This article is my take on the DevOps topic based on my training and my work experience. If you're already on the matter then you probably know most of what I wrote, if you are new to the subject, keep seeing the term trending and would like to have and overview without going through tons of specific doc: read ahead.
 
 In the last 4/5 years, and a lot more frequently after containerization kicked off, the only chance you never heard of DevOps is if you have been **not**  working in IT at all.
 
@@ -142,7 +144,7 @@ Kanban boards (or their digital counterparts) are often use as a visual help to 
 
 ### More feedback
 
-Releasing more frequently means also that you can get more feedback from users/customers and be able to adapt to those feedback quicker. 
+Releasing more frequently means that you can get more feedback from users/customers and be able to adapt to those feedback quicker. 
 In general this implies:
 - higher customer satisfaction (as they see their opinion quickly valued) 
 - precious data on specific changes that will drive the implementation road map from then on  
@@ -159,7 +161,9 @@ Even if your product is not a cloud SaaS application but an on-premise solution,
 
 You will probably, as in everything in life, find resistance. It will come from status-quo loving people, colleagues that really don't want to change their day-by-day duties or simply that, until now, have managed to be low-output without being noticed.
 
-Ultimately: from a geek point of view, it is a lot of fun :D
+In any case: the goal justify the means. Switching to a more dynamic release process will undoubtedly set your product for a higher quality level and your team for a improved overall productivity and collaboration well being.
+
+Ultimately, from a geek point of view: automation is a lot of fun :D
 
 # References
 
@@ -168,7 +172,7 @@ I strongly recommend one book above all: <a target="_blank" href="https://www.am
 I also recommend to follow <a target="_blank" href="https://www.youtube.com/channel/UC0NErq0RhP51iXx64ZmyVfg">Bret Fisher</a>, a "Docker Captain" that for many years helped to spread general competence on the topic. I found his Udemy courses extremely valuable. 
 
 # Thanks for reading!
-I hope you enjoyed this quick lecture and, most importantly, I hope I lit a spark on the topic. I will get more in depth of some of the tools listed in future articles.
+I hope you enjoyed this quick lecture and, most importantly: I hope I lit a spark on the topic. I will get more in depth of some of the tools listed in future articles.
 Any feedback is appreciated. You can contact me <a href="/contact/">here</a> or via my <a target="_blank" href="https://www.linkedin.com/in/stefano-chittaro">LinkedIn</a> profile. 
 
 Cheers,
