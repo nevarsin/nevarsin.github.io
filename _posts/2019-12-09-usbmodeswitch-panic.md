@@ -1,19 +1,20 @@
 ---
 layout: post
-title:  "Raspberry, USB Modeswitch and Kernel panic"
-description: USB_modeswitch, on Raspbian, is a bless. Sometimes, however, things can "panic". This is how I fixed it.
-date:   2020-01-12 18:30:00 +01
+title:  "Raspberry, USB Modeswitch and panic"
+description: USB_modeswitch, on Raspbian, is a bless. Sometimes, however, things (and kernel) can "panic". This is how I fixed it.
+date:   2020-01-12 18:00:00 +01
 categories: linux
 author: nevarsin
 published: true 
 ---
-|![]({{site.baseurl}}/images/usbmodeswitch_header.png)|
-|:--:| 
-| *the default usbmodeswitch conf file* |
 
 # Introduction
 
 This article is more of a spin-off of <a href="/raspberry-router/">my tutorial on how to turn an old Raspberry Pi on a smart and free home router</a>. I will describe here what kernel panic issue I had and how I fixed it. Hope it can be useful for other purposes and with different hw.
+
+|![]({{site.baseurl}}/images/usbmodeswitch_header.png)|
+|:--:| 
+| *the default usbmodeswitch conf file* |
 
 # What is USB_Modeswitch and why do we need it?
 
