@@ -2,10 +2,10 @@
 layout: post
 title:  "Raspberry Router part 2: How to VPN your whole network"
 description: If you're concerned about privacy (and you should be) here's a quick way to route all your home traffic through a VPN"
-date:   2019-12-09 13:30:00 +01
+date:   2020-01-09 13:30:00 +01
 categories: linux
 author: nevarsin
-published: true 
+published: false
 ---
 |![]({{site.baseurl}}/images/usbmodeswitch_header.png)|
 |:--:| 
