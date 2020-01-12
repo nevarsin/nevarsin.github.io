@@ -11,6 +11,7 @@ published: false
 |:--:| 
 | *the default usbmodeswitch conf file* |
 
+<<<<<<< HEAD
 USB Modeswitch is a
 
 # Alcatel X200/X200L/X060S/L100V, Archos G9 3G Key
@@ -56,3 +57,27 @@ EnableLogging=0
 
 
 MessageContent="55534243123456788000000080000606f50402527000000000000000000000"
+=======
+# Introduction
+
+This article is more of a spin-off of my tutorial on how to turn an old Raspberry Pi on a smart and free home router. I will describe 
+
+# What is USB_Modeswitch and why do we need it?
+
+USB Modeswitch is a simple but effective tool that, since 2010, helps Linux user/admins with those weird hybrid usb dongles.
+Let me explain what I mean by that:
+USB dongles come in a variety of forms and they are typically single purpose (a modem, device adapter, network interface, etc). What makes them weird is that, because of Windows and its extremely lacking set of device drivers, vendors had to find a way to supply said drivers in a plug&play fashion.
+
+This means that, when you plug one of these devices for the first time, it will
+- tell the OS "I'm a CDROM! Here's the setup you wanna autorun!"
+- install the actual driver
+- switch to its actual purpose 
+- start working
+
+Linux, on the other hand, comes with a whole load of device drivers included in the kernel, so no need for that extra step.
+
+So every time you plugged in a bt/eth/wifi/whatever dongle in your workstation and saw it working right away, you have to thank usb_modeswitch (and the kernel devs, of course)
+ 
+# 
+
+>>>>>>> 52d8fcb36d49709a0967c40779b91fe1a9f22da2
