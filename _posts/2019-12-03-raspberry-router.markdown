@@ -85,7 +85,7 @@ The device is a USB multimode one so if you plug it in a Windows computer it wil
 
 With Linux you don't need to install anything beforehand and usb_modeswitch should immediately set the modem to... well... modem mode.
 
-In my case, however, I got a kernel panic when usb_modeswitch kicked in. A little workaround was needed: I explained it here
+In my case, however, I got a kernel panic when usb_modeswitch kicked in. A little workaround was needed: <a href="/usbmodeswitch-panic/">I explained it here</a>
 
 ## Firewall configuration
 We need to install some packages 
