@@ -11,7 +11,7 @@ published: false
 |:--:| 
 | *the default usbmodeswitch conf file* |
 
-USB Modeswitch is a
+Privacy r0x and you too so do vpn
 
 # Alcatel X200/X200L/X060S/L100V, Archos G9 3G Key
 TargetVendor=0x1bbb
