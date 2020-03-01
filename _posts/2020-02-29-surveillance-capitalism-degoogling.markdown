@@ -34,6 +34,59 @@ But this is not just for the big tech. There are two major business model, depen
 - You're one of the big tech: you can "organize the world's information" and use it to boost the click-through ratio of your ads. 
 - You're not one of the big tech: you can offer your services for free and sell your data collection to the players above. [Take Avast "free" antivirus as an example](https://www.pcmag.com/news/the-cost-of-avasts-free-antivirus-companies-can-spy-on-your-clicks). 
 
-So, while Google developed new services to "make your life easier" and collect more real life data (e.g. [Google Maps](https://www.inverse.com/article/32886-google-map-privacy-variation) the rest of the marked populated a terrifying landscape of new "free" services aimed specifically at your behavioural surplus. 
+So, while Google developed new services to "make your life easier" and collect more real life data (e.g. [Google Maps](https://www.inverse.com/article/32886-google-map-privacy-variation) the rest of the market generated a terrifying landscape of new "free" services aimed specifically at your behavioural surplus. 
 
-You know have apps, [mouses](https://www.theverge.com/2020/2/6/21126245/wacom-tablet-app-tracking-google-analytics), thermostats collecting and selling your data.
+You now have apps, [mouses](https://www.theverge.com/2020/2/6/21126245/wacom-tablet-app-tracking-google-analytics), thermostats collecting and (most likely) selling your data. And we're not talking about minor cash, it represents a whole business model for most of the companies that decided to join the surveillance capitalism(link wiki qui)
+
+#Why this matters
+Because, as Ed Snowden stated perfectly, saying that you don't care about privacy because you have nothing to hide is like not caring about free speech because you have nothing to say.
+
+The data that today gets used "only" to sell you a new fancy consumer gadget tomorrow can be used to profile you and have effects into your real life. Think about how insurance companies can adjust your premiums based on your actual driving habits. Or how your credit score can be affected by the online purchases you make. 
+
+Or the scariest case: how can this affect modern democracy (the Facebook/Cambridge Analytica scandal is the most prominent example) by putting you in a tailored political bubble, polarizing opinion and eventually disrupting what's left of honest and mature intellectual challege.
+
+# What can one do (and I'm doing)
+From a small scale point of view, the most practical course of action is to limit your collectable data footprint. How? Some ideas:
+- limit the "free" services you employ
+- stop feeding free of charge training and profiling data to social networks (your mental health will improve too) LINK
+- try to install as less apps as possible on your devices. Data is collected even when they're not in use.
+- avoid smart speakers (yes, they listen LINK).
+- limit the connected "things" you deploy at home
+- switch to open source, audited and clear business-modelled services
+
+# Degoogling
+The most subtle effect surveillance capitalism has had to us is addiction. Google, as the inventor and champion of this discipline, has quietly created an ecosystem of free and convenient services that bilions of people use everyday without ever needing to consider a competitive alternative. Think about it:
+- Search
+- Maps
+- Translate
+- Gmail
+- Calendar/Contacts
+- Drive
+- Youtube
+
+They are massive part of our lives and society expects you to be fully perfomant, in your everyday life, thanks to those services (When was the last time you had a street route described with words?)
+
+This is why I decided to start a journey to get ride on anything directly supplied by Google, managing my own infrastructure, finding alternative and paying for services that I value and trust.
+
+The next article series on this topic will describe how I:
+- Switched my family file, calendar and contact sharing to a managed Nextcloud LINK instance
+- Flashed my Android phone with LineageOS, a collaborative Android distribution that doesn't employ Google Services by default
+- Migrated to an ethic and paid email services, using my own domain name 
+- Found a huge amount of replacement client apps 
+- Stopped feeding my searches to Google
+
+# Jeez, that looks painfully long. Isn't there something I can do right now?
+Of course. You can start today by [switching](https://duckduckgo.com/install) your default search engine to DuckDuckGo LINK: they don't track you and they don't log your data. Ever.
+
+Stop uploading personal content to social media.
+
+And you can start reading and spreading awareness on the issue.
+- Surveillance Capitalism by Shoshanna Zouboff (You can hear directly from the author in a great Firefox IRL podcast episode LINK)
+- Permanent Record by Edward Snowden
+
+# My final reccomendations
+This is very sensitive topic, while at first I considered it a "first world problem", once you start considering the real life implications, it won't look like a joke anymore.
+
+Stay tuned for more tech approaches to the matter and as always feel free to contact me and share.
+
+Stefano "Nevarsin" Chittaro 
