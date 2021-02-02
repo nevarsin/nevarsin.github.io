@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Surveillance capitalism and my path to degoogling"
-description: "Why we do have so many free apps and what can one do about it"
-date:   2020-02-01 13:30:00 +01
+title:  "Free as in Freemium"
+description: "Why we do have so many free apps, who is paying for them and what can one do about it"
+date:   2021-02-01 13:30:00 +01
 categories: life
 author: nevarsin
 published: true
